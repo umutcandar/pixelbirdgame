@@ -3,76 +3,66 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pixel Bird Destek</title>
+  <meta name="description" content="Nimbora destek, oynanış yardımı ve iletişim sayfası.">
+  <title>Nimbora Destek</title>
   <style>
     :root {
-      color-scheme: light dark;
+      color-scheme: dark;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      line-height: 1.6;
+      line-height: 1.65;
+      --bg: #07091b;
+      --card: #111633;
+      --line: #29346c;
+      --text: #f4f6ff;
+      --muted: #b5bee6;
+      --accent: #8be9ff;
+      --gold: #ffd978;
     }
-
+    * { box-sizing: border-box; }
     body {
       margin: 0;
-      background: #101014;
-      color: #f4f4f5;
+      min-height: 100vh;
+      background: radial-gradient(circle at 15% 0%, #1b2a63 0, transparent 38%), radial-gradient(circle at 85% 20%, #3f1f68 0, transparent 32%), var(--bg);
+      color: var(--text);
     }
-
-    main {
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 48px 20px;
-    }
-
-    a {
-      color: #ffd84d;
-    }
-
-    .card {
-      background: #18181f;
-      border: 1px solid #2a2a35;
-      border-radius: 18px;
-      padding: 28px;
-    }
-
-    h1 {
-      line-height: 1.15;
-      margin-top: 0;
-    }
-
-    .muted {
-      color: #b7b7c2;
-    }
+    main { max-width: 780px; margin: 0 auto; padding: 56px 20px; }
+    .card { background: #111633eb; border: 1px solid var(--line); border-radius: 24px; padding: clamp(24px, 5vw, 44px); box-shadow: 0 24px 80px rgba(0, 0, 0, .35); }
+    .eyebrow { color: var(--gold); font-size: .78rem; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; }
+    h1 { margin: .35rem 0 .5rem; font-size: clamp(2.2rem, 8vw, 4.2rem); line-height: 1; letter-spacing: -.04em; }
+    h2 { margin-top: 2rem; color: var(--accent); }
+    p, li { color: var(--muted); }
+    strong { color: var(--text); }
+    a { color: var(--accent); }
+    .steps { padding-left: 1.25rem; }
+    .meta { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-top: 28px; }
+    .meta div { border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; color: var(--muted); }
   </style>
 </head>
 <body>
   <main>
-    <div class="card">
-      <h1>Pixel Bird Destek</h1>
-      <p class="muted">Pixel Bird iOS uygulaması için destek sayfası.</p>
-
-      <h2>Yardım ve geri bildirim</h2>
-      <p>
-        Pixel Bird ile ilgili hata bildirimi, satın alma sorunu, geri bildirim veya destek talepleriniz için
-        aşağıdaki e-posta adresinden bize ulaşabilirsiniz:
-      </p>
-
-      <p>
-        <a href="mailto:pixel.birdx@gmail.com">pixel.birdx@gmail.com</a>
-      </p>
-
-      <h2>Uygulama bilgileri</h2>
-      <p>
-        Uygulama adı: Pixel Bird<br>
-        Platform: iOS<br>
-        Sürüm: 1.0
-      </p>
-
-      <h2>Gizlilik politikası</h2>
-      <p>
-        Gizlilik politikamızı buradan okuyabilirsiniz:
-        <a href="privacy.html">Pixel Bird Gizlilik Politikası</a>
-      </p>
-    </div>
+    <article class="card">
+      <div class="eyebrow">Uzay refleks ve yörünge oyunu</div>
+      <h1>Nimbora</h1>
+      <p>Işık küreni yıldız düğümleri arasında fırlat, rotanı havada bük ve çizdiğin ışık ipliklerini kesiştirerek rezonans oluştur.</p>
+      <h2>Oynanış yardımı</h2>
+      <ol class="steps">
+        <li>Ekranın istediğin yerine dokunup sürükleyerek yönünü seç.</li>
+        <li>Parmağını bıraktığında ışık küresi seçtiğin yöne fırlar.</li>
+        <li>Havadayken yeniden sürükleyerek rotayı bük; kısa dokunuşla Faz Sıçraması yap.</li>
+        <li>Takımyıldızı Atölyesi'nde yıldızları seç, kesişimler oluştur ve kendi gökyüzü armanı kaydet.</li>
+      </ol>
+      <h2>Destek ve geri bildirim</h2>
+      <p>Hata bildirimi, satın alma, reklam veya oynanışla ilgili yardım için <a href="mailto:pixel.birdx@gmail.com?subject=Nimbora%20Destek">pixel.birdx@gmail.com</a> adresine ulaşabilirsin. Mesajına cihaz modelini, iOS sürümünü ve sorunun kısa tarifini eklemen çözümü hızlandırır.</p>
+      <h2>Satın almaları geri yükleme</h2>
+      <p>Nimbora içindeki mağazayı açıp <strong>Satın Almaları Geri Yükle</strong> seçeneğini kullan. Ödeme bilgileri Nimbora tarafından değil, Apple tarafından işlenir.</p>
+      <h2>Gizlilik</h2>
+      <p><a href="privacy.html">Nimbora Gizlilik Politikası</a> uygulamanın yerel kayıt, reklam ve satın alma süreçlerini açıklar.</p>
+      <div class="meta">
+        <div><strong>Uygulama</strong><br>Nimbora</div>
+        <div><strong>Platform</strong><br>iPhone ve iPad</div>
+        <div><strong>Geliştirici</strong><br>Umut Çandar</div>
+      </div>
+    </article>
   </main>
 </body>
 </html>
